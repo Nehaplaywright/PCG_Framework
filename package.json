@@ -1,0 +1,19 @@
+{
+  "name": "salesforce_rbc_uswm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:chrome": "playwright test --project=chromium",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:registration": "playwright test tests/client-prospect-registration.spec.ts --project=chromium",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2",
+    "dotenv": "^18.0.3",
+    "typescript": "^5.9.2"
+  }
+}
